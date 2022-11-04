@@ -10,7 +10,7 @@ public class LightTrigger : MonoBehaviour
     {
         if (targetLight == null)
         {
-            Debug.Log("Light is not attatched to the Script!");
+            Debug.LogWarning("Light is not attatched to the Script!");
             throw new System.NullReferenceException();
         }
 

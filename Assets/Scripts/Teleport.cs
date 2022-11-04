@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
+    // --- Variables
+
     [SerializeField]
     private Transform target;
+
+    // --- Methods
 
     public void Interact(Transform toMove)
     {
