@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 711238556}
   - component: {fileID: 711238555}
   m_Layer: 0
-  m_Name: Door-1
+  m_Name: Teleport-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,8 +577,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711238554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.05, y: 2, z: -1.309}
-  m_LocalScale: {x: 0.5, y: 3, z: 2}
+  m_LocalPosition: {x: -6.05, y: 1, z: -1.309}
+  m_LocalScale: {x: 2, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -813,8 +813,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -889,7 +889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1273349944}
   m_Layer: 0
-  m_Name: Door-1 Target v2
+  m_Name: Teleport-1 Target v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 1526039097}
   - component: {fileID: 1526039096}
   m_Layer: 0
-  m_Name: Door-1 Target
+  m_Name: Teleport-1 Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc8bb293667c4c4eab721f2c00a79b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetLight: {fileID: 1258625568}
+  targetLight: {fileID: 0}
 --- !u!65 &1712998714
 BoxCollider:
   m_ObjectHideFlags: 0
