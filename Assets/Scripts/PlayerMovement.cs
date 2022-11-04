@@ -14,22 +14,21 @@ public class PlayerMovement : MonoBehaviour
     //zmienna u¿ywana w kodzie (nie widoczna w Inspektorze)
     private Vector3 tempRot;
 
-    //metoda która siê powtarza co klatkê (FPS - Frames Per Second)
     void Update()
     {
-        //poruszanie do przodu
+        //mvoe forward
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             transform.position += transform.forward * movementSpeed;
         }
 
-        //poruszanie do ty³u
+        //move backwards
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             transform.position += transform.forward * -1 * movementSpeed;
         }
 
-        //skrêt w lewo
+        //turn left
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             tempRot = transform.localEulerAngles;
@@ -37,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localEulerAngles = tempRot;
         }
 
-        //skrêt w prawo
+        //turn right
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             tempRot = transform.localEulerAngles;
@@ -48,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //interaction with the door
         collision.gameObject.SendMessage("Interact", transform, SendMessageOptions.DontRequireReceiver);
     }
 }
